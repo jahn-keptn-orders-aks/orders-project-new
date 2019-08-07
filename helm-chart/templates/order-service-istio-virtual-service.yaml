@@ -1,0 +1,13 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: orders-project-new-dev-order-service
+spec:
+  hosts:
+  - "order-service.orders-project-new-dev.40.87.6.40.xip.io"
+  gateways:
+  - orders-project-new-dev-gateway
+  http:
+    - route:
+      - destination:
+          host: order-service.orders-project-new-dev.svc.cluster.local
