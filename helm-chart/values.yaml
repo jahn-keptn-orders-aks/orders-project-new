@@ -4,7 +4,7 @@ frontEnd:
     image:
         pullPolicy: Always
         repository: robjahn/keptn-orders-front-end
-        tag: 2
+        tag: 1
     replicaCount: 1
     resources:
         limits:
